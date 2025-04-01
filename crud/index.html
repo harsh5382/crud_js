@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CRUD App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>CRUD App (JavaScript + HTML + CSS)</h2>
+
+        <!-- Form to Add or Update User -->
+        <form id="userForm">
+            <input type="hidden" id="userIndex">
+            <input type="text" id="name" placeholder="Enter Name" required>
+            <input type="email" id="email" placeholder="Enter Email" required>
+            <input type="number" id="age" placeholder="Enter Age" required>
+            <button type="submit">Save</button>
+        </form>
+
+        <!-- Table to Display Users -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="userTable"></tbody>
+        </table>
+    </div>
+
+    <script src="storage.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
